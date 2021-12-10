@@ -1,6 +1,8 @@
 class Magician {
-  constructor(magicianName) {
-    this.name = `The Great ${magicianName.name}`;
+  constructor(magicianObject) {
+    this.name = `The Great ${magicianObject.name}`;
+    this.assistant = magicianObject.assistant;
+    this.favoriteAccessory = 'top hat'
   };
 }
 
