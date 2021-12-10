@@ -49,7 +49,7 @@ describe('Magician', function() {
     assert.equal(charm, 'ALLAKAZAAM!');
   });
 
-  it.skip('should be able to pull a rabbit from the hat, if the magician has a top hat', function() {
+  it('should be able to pull a rabbit from the hat, if the magician has a top hat', function() {
     var magician1 = new Magician({ name: 'Hannah' });
     var magician2 = new Magician({ name: 'Kayla', clothing: 'top hat' });
 
@@ -60,7 +60,7 @@ describe('Magician', function() {
     assert.equal(spell2, 'PULL RABBIT FROM TOP HAT');
   });
 
-  it.skip('should be able to pull a dove from the sleeve, if the magician does not have a top hat', function() {
+  it('should be able to pull a dove from the sleeve, if the magician does not have a top hat', function() {
     var magician = new Magician({ name: 'Leta', clothing: 'cape' });
 
     var spell = magician.performTrick();
