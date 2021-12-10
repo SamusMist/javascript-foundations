@@ -16,10 +16,10 @@ class Magician {
     return `PULL RABBIT FROM TOP HAT`;
   };
   performShowStopper() {
-    if (this.confidencePercentage < 100) {
-      return `Oh no, this trick is not ready!`;
+    if (this.confidencePercentage >= 100 && this.assistant) {
+      return `WOW! The magician totally just sawed that person in half!`
     };
-    return `WOW! The magician totally just sawed that person in half!`
+    return `Oh no, this trick is not ready!`;
   };
 }
 
