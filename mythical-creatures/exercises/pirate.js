@@ -13,6 +13,13 @@ class Pirate {
     this.booty += 100;
     return `YAARRR!`;
   };
+  liftCurse() {
+    if (this.booty > 0) {
+      this.booty -= 300;
+      this.cursed = false;
+      return `Your curse has been lifted!`;
+    };
+  };
 }
 
 module.exports = Pirate;
