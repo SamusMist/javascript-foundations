@@ -4,7 +4,10 @@ class Medusa {
   constructor(name) {
     this.name = name;
     this.statues = [];
-  }
+  };
+  gazeAtVictim(victim) {
+    this.statues.push(victim);
+  };
 }
 
 module.exports = Medusa;
